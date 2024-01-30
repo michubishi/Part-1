@@ -17,15 +17,12 @@ public class TrampolinePlayer : MonoBehaviour
     public float speed = 15;
     public float force = 0;
 
-    float velocity;
-    // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>(); //referencing to the rigidbody2D component 
         jumpDirection.y = 1; //making the jump direction up
     }
 
-    // Update is called once per frame
     void Update()
     {
         direction.x = Input.GetAxis("Horizontal"); //changes the x direction of the player 
