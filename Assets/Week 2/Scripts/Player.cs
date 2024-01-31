@@ -24,4 +24,5 @@ public class Player : MonoBehaviour
     {
         rigidbody.AddForce(direction * force * Time.deltaTime);
     }
+
 }
