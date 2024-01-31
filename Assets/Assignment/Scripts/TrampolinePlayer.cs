@@ -30,9 +30,9 @@ public class TrampolinePlayer : MonoBehaviour
 
         if (Input.GetKey(KeyCode.DownArrow)) //if the down arrow is pressed down
         {
-            if (force < 500) //and if the force is still less than 500
+            if (force < 300) //and if the force is still less than 500
             {
-                force += 40 * Time.deltaTime; //building up force for the jump
+                force += 300 * Time.deltaTime; //building up force for the jump
             }
         }
 
